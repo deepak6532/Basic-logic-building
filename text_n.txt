@@ -1,0 +1,283 @@
+1:
+  #include<stdio.h>
+
+int main()
+{
+    int i=1;
+    
+    while(i<=5)
+    {
+        printf("%d ",i);
+        i++;
+    }
+}
+
+output:
+	1 2 3 4 5
+
+
+2:
+  #include<stdio.h>
+
+int main()
+{
+    int i=1,sum=0;
+    
+    while(i<=5)
+    {
+        sum = sum +i;
+        i++;
+    }
+    printf("%d ",sum);
+}
+
+output :
+	15
+
+
+3:
+
+#include<stdio.h>
+
+int main()
+{
+    int i=1;
+    
+    while(i<=10)
+    {
+    
+    if(i%2==0)
+    {
+        printf("%d ",i);
+    }
+    i++;
+    }
+}
+
+
+output:
+	2 4 6 8 10
+
+
+
+4:
+
+#include<stdio.h>
+
+int main()
+{
+    int n=5;
+    
+    while(n>=1)
+    {
+        printf("%d ",n);
+        n--;
+    }
+}
+
+output:
+	5 4 3 2 1
+
+
+
+5:
+
+#include<stdio.h>
+
+int main()
+{
+   int n = 23,r,sum=0;
+   
+   while(n>0)
+   {
+       r = n%10;
+       sum = sum +r;
+       n = n/10;
+   }
+   printf("%d",sum);
+}
+
+output:       
+5
+
+
+
+6:
+
+#include<stdio.h>
+
+int main()
+{
+  int a,b,c;
+  printf("Enter the value of a and b and c ");
+  scanf("%d%d%d",&a,&b,&c);
+  
+  if(a>b && a>c)
+  {
+      printf("A is greator");
+  }
+  else if(b>a && b>c)
+  {
+      printf("B is greator");
+  }
+  else
+  {
+      printf("C is greator");
+  }
+}
+
+output:
+ 
+Enter the value of a and b and c 4
+8
+2
+B is greator
+
+
+7:
+
+#include<stdio.h>
+
+int main()
+{
+    
+    int m1,m2,m3,m4,m5,total,perc;
+    
+    printf("Enter the marks of subject 1 and subject 2 and subject 3\n");
+    scanf("%d%d%d%d%d",&m1,&m2,&m3,&m4,&m5);
+    
+    total = m1+m2+m3+m4+m5;
+    perc = total/5;
+    printf("Total marks %d\n",total);
+    printf("Percentage %d",perc);
+    
+    
+  if(perc>=90)
+  {
+      printf("GRADE  A");
+  }
+  else if(perc>=80 && perc<=89)
+  {
+      printf("GRADE B");
+  }
+  else if(perc>=70 && perc<=79)
+  {
+      printf("GRADE C");
+  }
+  else if(perc>=60 && perc<=69)
+  {
+      printf("GRADE D");
+  }
+  else
+  {
+      printf("GRADE F");
+  }
+
+}
+
+
+output:
+
+Enter the marks of subject 1 and subject 2 and subject 3
+50
+60
+70
+70
+80
+Total marks 330
+Percentage 66
+GRADE D
+
+8:
+
+#include<stdio.h>
+
+int main()
+{
+    int age;
+    
+    printf("Enter your age ");
+    scanf("%d",&age);
+    
+    if(age>=18)
+    {
+        printf("Eligible for vote");
+    }
+    else
+    {
+        printf("Not eligible for vote");
+    }
+}
+
+output:
+
+Enter your age 19
+
+Eligible for vote
+
+
+
+9:
+
+#include<stdio.h>
+
+int main()
+{
+  int a,b,c;
+  printf("Enter the value of a and b and c ");
+  scanf("%d%d%d",&a,&b,&c);
+  
+  if(a<b && a<c)
+  {
+      printf("A is lessthan");
+  }
+  else if(b<a && b<c)
+  {
+      printf("B is lessthan");
+  }
+  else
+  {
+      printf("C is lessthan");
+  }
+}
+
+output:
+
+Enter the value of a and b and c 7
+3
+4
+B is lessthan
+
+
+10:
+
+#include<stdio.h>
+
+int main()
+{
+  int n,i=1;
+  
+  printf("enter the number ");
+  scanf("%d",&n);
+  
+  while(i<=10)
+  {
+      printf("%d x %d = %d\n",n,i,n*i);
+      i++;
+  }
+ 
+}
+
+output:
+
+enter the number 6
+6 x 1 = 6
+6 x 2 = 12
+6 x 3 = 18
+6 x 4 = 24
+6 x 5 = 30
+6 x 6 = 36
+6 x 7 = 42
+6 x 8 = 48
+6 x 9 = 54
+6 x 10 = 60
