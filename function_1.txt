@@ -1,0 +1,680 @@
+#include<stdio.h>
+
+void sum();
+void sub();
+void mul();
+void div();
+void mod();
+
+int main()
+{
+       sum();
+       sub();
+       mul();
+       div();
+       mod();
+}
+
+void sum()
+{
+    int a=10,b=5;
+    
+    printf("sum of a and b is %d\n",a+b);
+}
+void sub()
+{
+    int a=10,b=5;
+    
+    printf("subtraction of a and b is %d\n",a-b);
+}
+void mul()
+{
+    int a=10,b=5;
+    
+    printf("multiply of a and b is %d\n",a*b);
+}
+void div()
+{
+    int a=10,b=5;
+    
+    printf("division of a and b is %d\n",a/b);
+}
+void mod()
+{
+    int a=12,b=5;
+    
+    printf("module of a and b is %d\n",a%b);
+}
+
+output:
+
+sum of a and b is 15
+subtraction of a and b is 5
+multiply of a and b is 50
+division of a and b is 2
+module of a and b is 2
+===========================================
+#include<stdio.h>
+
+void even();
+
+int main()
+{
+    even();
+    
+    return 0;
+}
+
+void even()
+{
+    int n;
+    printf("Enter number ");
+    scanf("%d",&n);
+    
+    if(n%2==0)
+    {
+        printf("Even number");
+    }
+    else
+    {
+        printf("Odd number ");
+    }
+}
+
+output:
+
+Enter number 12
+Even number 
+=============================================
+#include<stdio.h>
+
+void vote();
+
+int main()
+{
+    vote();
+    
+    return 0;
+}
+
+void vote()
+{
+    int age;
+    printf("Enter your age ");
+    scanf("%d",&age);
+    
+    if(age>=18)
+    {
+        printf("Eligible for vote");
+    }
+    else
+    {
+        printf("Not Eligibel ");
+    }
+}
+
+outpur:
+
+Enter your age 19
+Eligible for vote
+=========================================
+#include<stdio.h>
+
+void marksheet();
+int main()
+{
+    marksheet();
+    return 0;
+}
+
+void marksheet()
+{
+    int m1,m2,m3,m4,marks;
+    float perc;
+    printf("Enter the  marks per  subject ");
+    scanf("%d %d %d %d",&m1,&m2,&m3,&m4);
+    
+    marks = m1 + m2 + m3 +m4;
+    perc = marks/4;
+    printf("Total marks %d\n",marks);
+    printf("Percentage %f\n",perc);
+    
+    if(perc>=90)
+    {
+        printf("A grade");
+    }
+    else if(perc>=80 && perc<90)
+    {
+        printf("B grade");
+    }
+    else if(perc>=70 && perc<80)
+    {
+        printf("C grade");
+    }
+    else if(perc>=60 && perc<70)
+    {
+        printf("D grade");
+    }
+    else
+    {
+        printf("F grade");
+    }
+    
+}
+
+
+output:
+
+Enter the  marks per  subject 80
+70
+60
+50
+Total marks 260
+Percentage 65.000000
+D grade
+============================================
+#include<stdio.h>
+
+void threenumbermax();
+
+int main()
+{
+    threenumbermax();
+    return 0;
+}
+
+void threenumbermax()
+{
+    int a,b,c;
+    printf("Enter the value of a b and c ");
+    scanf("%d %d %d",&a,&b,&c);
+    
+    if(a>b && a>c)
+    {
+    printf("A is greator");
+    }
+    else if(b>a &&b>c)
+    {
+        printf("B is greator");
+    }
+    else
+    {
+        printf("C is greator");
+    }
+    
+}
+
+output:
+Enter the value of a b and c 7
+12
+4
+B is greator
+===========================================
+#include<stdio.h>
+
+void bill();
+
+int main()
+{
+    bill();
+    return 0;
+}
+
+void bill()
+{
+    int unit;
+    printf("Enter the unit ");
+    scanf("%d",&unit);
+    
+    if(unit<=50)
+    {
+    printf("total bill is %d",unit*1.5);
+    }
+    else if(unit>=51 && unit<=100)
+    {
+        printf("total bill is %d", unit*2);
+    }
+    else if(unit>=101 && unit<=200)
+    {
+        printf("total bill is %d",unit*4);
+    }
+    else
+    {
+        printf("total bill is %d",unit*5);
+    }
+    
+}
+
+output:
+Enter the unit 120
+total bill is 480
+=============================================
+#include<stdio.h>
+
+void calendra();
+
+int main()
+{
+    calendra();
+    return 0;
+}
+
+void calendra()
+{
+    int m;
+    printf("Enter the month number ");
+    scanf("%d",&m);
+    
+    if(m==1)
+    {
+    printf("January");
+    }
+    else if(m==2)
+    {
+        printf("Febuary");
+    }
+     if(m==3)
+    {
+    printf("march");
+    }
+    else if(m==4)
+    {
+        printf("April");
+    }
+     if(m==5)
+    {
+    printf("may");
+    }
+    else if(m==6)
+    {
+        printf("June");
+    }
+     if(m==7)
+    {
+    printf("July");
+    }
+    else if(m==8)
+    {
+        printf("August");
+    }
+     if(m==9)
+    {
+    printf("September");
+    }
+    else if(m==10)
+    {
+        printf("October");
+    }
+     if(m==11)
+    {
+    printf("November");
+    }
+    else if(m==12)
+    {
+        printf("December");
+    }
+    else
+    {
+        printf("Enter valid month name ");
+    }
+}
+
+output:
+Enter the month number 11
+November
+===========================================
+#include<stdio.h>
+
+void swap();
+
+int main()
+{
+    swap();
+    return 0;
+}
+
+void swap()
+{
+    int a,b;
+    printf("Enter the value of  a and b ");
+    scanf("%d %d",&a,&b);
+    
+    printf("A = %d  B = %d\n",a,b);
+    
+    a = a+b;
+    b = a-b;
+    a  =a-b;
+    
+    printf("After swapping\n");
+    printf("A = %d  B = %d",a,b);
+}
+
+output:
+Enter the value of  a and b 101
+302
+A = 101  B = 302
+After swapping
+A = 302  B = 101
+==============================================
+#include<stdio.h>
+
+void swapth();
+
+int main()
+{
+    swapth();
+    return 0;
+}
+
+void swapth()
+{
+    int a,b;
+    printf("Enter the value of  a and b ");
+    scanf("%d %d",&a,&b);
+    
+    printf("A = %d  B = %d\n",a,b);
+    
+   int c = a;      
+   a  = b;
+   b  = c;
+    
+    printf("After swapping\n");
+    printf("A = %d  B = %d",a,b);
+}
+
+output:
+Enter the value of  a and b 10
+20
+A = 10  B = 20
+After swapping
+A = 20  B = 10
+=============================================
+#include <stdio.h>
+
+void taxcalculator();
+int main() {
+    
+    taxcalculator();
+
+    return 0;
+}
+
+void taxcalculator()
+{
+    printf("-----calculate the tax---\n");
+    float income, tax;
+    printf("Enter your income: ");
+    scanf("%f", &income);
+    if (income <= 10000) {
+        tax = 0;
+    } else if (income >= 10001 && income <= 30000) {
+        tax = income * 0.10;
+    } else if (income >= 30000 && income <= 50000) {
+        tax = income * 0.20;
+    } else {
+        tax = income * 0.30;
+    }
+    printf("Your income tax is: %.2f\n",tax);
+}
+
+output:
+
+-----calculator the tax---
+Enter your income: 30000
+Your income tax is: 3000.00
+============================================================
+#include<stdio.h>
+
+void temp();
+int main()
+{
+    temp();
+    
+    return 0;
+    
+}
+
+void temp()
+{
+    float f,c;
+    printf("Enter the temprture ");
+    scanf("%f",&f);
+    c =  (f-32) * 5/9;
+    printf(" fahrenheight to celcius %f\n",c);
+    
+    f = (c*9/5) +32;
+    printf(" celcius  to fahrenheight %f",f);
+}
+
+output:
+
+Enter the temprture 52
+fahrenheight to celcius 11.111111
+celcius  to fahrenheight 52.000000
+================================================================================
+#include<stdio.h>
+
+void armstrong();
+void palidrome();
+void neon();
+void reverse();
+void sumdigit();
+void count();
+void fibonacci();
+void fact();
+
+
+int main()
+{
+    
+    char ch;
+    printf("Enter a character(a,p,n,r,s,c,f,t): ");
+    scanf("%c", &ch);
+    
+    if(ch=='a')
+    {
+        armstrong();
+    }
+      else if(ch=='p')
+     {
+         palidrome();
+        
+    }
+    else if(ch=='n')
+    {
+        neon();
+        
+    }
+    else if(ch=='r')
+    {
+        reverse();
+        
+    }
+    else if(ch=='s')
+    {
+        sumdigit();
+    }
+    else if(ch=='c')
+    {
+        count();
+        
+    }
+    else if(ch=='f')
+    {
+        fibonacci();
+        
+    }
+    else if(ch=='t')
+    {
+        fact();
+        
+    }
+    else
+    {
+        printf("Enter valid character");
+    }
+    
+  
+}
+
+void armstrong()
+{
+    int n,temp,r,sum=0;
+	
+	printf("Enter number ");
+	scanf("%d",&n);
+	temp = n;
+	
+	while(n>0)
+	{
+		r = n%10;
+		sum = sum + (r*r*r);
+		n = n/10;
+	}
+	if(sum==temp)
+	{
+		printf("%d is a armstrong number ",temp);
+	}
+	else
+	{
+		printf("%d is not armstrong number ",temp);
+	}
+	
+}
+
+
+void palidrome()
+{
+    int n,temp,r,sum=0;
+	
+	printf("Enter number ");
+	scanf("%d",&n);
+	temp = n;
+	
+	while(n>0)
+	{
+		r = n%10;
+		sum = sum*10 +r;
+		n = n/10;
+	}
+	if(sum==temp)
+	{
+		printf("%d is a palidrome number ",temp);
+	}
+	else
+	{
+		printf("%d is not palidrome number ",temp);
+	}
+	
+}
+
+void neon()
+{
+    int num,sum=0,r;
+    
+    
+    printf("Enter a number ");
+    scanf("%d",&num);
+    int square = num * num;
+    
+    while(square>0)
+    {
+        r = square%10;
+        sum = sum + r;
+        square = square/10;
+        
+    }
+    if(num == sum)
+    {
+        printf("Neon");
+        
+    }
+    else
+    {
+        printf("Not");
+    }
+}
+
+
+void reverse()
+{
+    int n,temp,r,sum=0;
+	
+	printf("Enter number ");
+	scanf("%d",&n);
+	temp = n;
+	
+	while(n>0)
+	{
+		r = n%10;
+		sum = sum*10 +r;
+		n = n/10;
+	}
+printf("%d", sum);
+	
+}
+
+
+void sumdigit()
+{
+    int n,sum=0,r;
+    printf("Enter the number ");
+    scanf("%d",&n);
+    
+    while(n>0)
+    {
+        r = n%10;
+        sum = sum + r;
+        n= n/10;
+    }
+    printf("%d",sum);
+    
+}
+
+void count()
+{
+    int n,count=0;
+    printf("Enter number ");
+    scanf("%d",&n);
+    
+    while(n>0)
+    {
+        n= n/10;
+        count++;
+    }
+    printf("%d",count);
+}
+
+void fibonacci()
+{
+    int a=0,b=1,c=0,n;
+    printf("Enter number ");
+    scanf("%d",&n);
+    
+    printf("%d %d ",a,b);
+    while(c<=n)
+    {
+        c = a +b;
+        printf("%d ",c);
+        a = b;
+        b = c;
+    }
+}
+
+void fact()
+{
+    int i=1,n,fact=1;
+    printf("Enter the number ");
+    scanf("%d",&n);
+    
+    while(i<=n)
+    {
+        fact = fact *i;
+        i++;
+    }
+    printf("%d",fact);
+}
+
+
+
+
