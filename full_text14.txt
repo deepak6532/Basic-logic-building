@@ -1,0 +1,666 @@
+2:
+
+#include<stdio.h>
+
+void palidrome(int n);
+void armstrong(int n);
+int main()
+{
+    int n;
+    printf("Enter the number ");
+    scanf("%d",&n);
+    palidrome(n);
+    armstrong(n);
+    
+}
+
+void palidrome(int n)
+{
+    int r,sum=0;
+   
+    int temp = n;
+    while(n>0)
+    {
+        r=  n%10;
+        sum = sum*10 + r;
+        n=  n/10;
+    }
+    if(sum == temp)
+    {
+        printf("Palidrome \n ");
+    }
+    else
+    {
+        printf("not\n");
+    }
+}
+
+
+void armstrong(int n)
+{
+    int r,sum=0;
+    
+    int temp = n;
+    while(n>0)
+    {
+       r = n %10;
+       sum = sum + r*r*r;
+       n = n/10;
+    }
+    if(sum == temp)
+    {
+        printf("armstrong \n");
+    }
+    else
+    {
+        printf("not");
+    }
+}
+
+output:
+Enter the number 121
+Palidrome 
+not
+============================================
+3:
+#include<stdio.h>
+
+int main()
+{
+    int n,fact= 1;
+    
+    printf("Enter the number ");
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++)
+    {
+        fact  = fact *i;
+    }
+    printf("%d",fact);
+    
+}
+
+output:
+Enter the number 6
+720
+================================================
+// 4:
+#include<stdio.h>
+
+int main()
+{
+    int n,sum=0,r;
+    
+    printf("Enter number ");
+    scanf("%d",&n);
+    
+   while(n>0)
+    {
+        r = n%10;
+        sum = sum + r;
+        n=n/10;
+    }
+    printf("%d",sum);
+    
+}
+
+output:
+Enter number 123
+6
+=================================================
+5:
+#include<stdio.h>
+
+int main()
+{
+   int n,count=0,r;
+   int i=1;
+   printf("enter number ");
+   scanf("%d",&n);
+   while(i<=n)
+   {
+       r = n%10;
+       n=n/10;
+       count++;
+   }
+   printf("%d",count);
+    
+}
+
+output:
+enter number 1234
+4
+==============================================
+6:
+#include<stdio.h>
+
+int main()
+{
+   for(int i=1;i<=5;i++)
+   {
+       for(int j=0;j<=4;j++)
+       {
+           printf("%d ",i+j*5);
+       }
+       printf("\n");
+   }
+
+
+}
+
+output:
+1 6 11 16 21 
+2 7 12 17 22 
+3 8 13 18 23 
+4 9 14 19 24 
+5 10 15 20 25 
+
+===================================================
+7:
+#include<stdio.h>
+
+int main()
+{
+   for(int i=1;i<=9;i++)
+   {
+       for(int j=1;j<=9;j++)
+       {
+           if(i==1||j==1||j==9||i==5)
+           {
+               printf("* ");
+           }
+           else
+           {
+               printf("  ");
+           }
+           
+       }
+       printf("\n");
+   }
+
+
+}
+
+output:
+* * * * * * * * * 
+*               * 
+*               * 
+*               * 
+* * * * * * * * * 
+*               * 
+*               * 
+*               * 
+*               * 
+===================================================
+8:
+#include<stdio.h>
+
+int main()
+{
+  int a,b,c;
+  printf("Enter the value of a and b and c ");
+  scanf("%d%d%d",&a,&b,&c);
+  
+  if(a>b && a>c)
+  {
+      printf("A is greator %d ",a);
+      
+  }
+  else if(b>a && b>c)
+  {
+      printf("B is greator %d ",b);
+  }
+  else
+  {
+      printf("C is greator %d",c);
+  }
+
+}
+
+output:
+Enter the value of a and b and c 33
+12
+11
+A is greator 33 
+===================================================
+9:
+#include <stdio.h>
+int main() {
+    
+    int i,j;
+    printf("enter starting and ending range ");
+    scanf("%d %d",&i,&j);
+    
+    for (int k=i;k<=j;k++){
+        if(k%2==0){
+            printf("%d ",k);
+        }
+    }
+   
+   
+    return 0;
+}
+output:
+enter starting and ending range 10
+20
+10 12 14 16 18 20 
+=================================================
+
+10:
+
+#include<stdio.h>
+
+int main()
+{
+    int n=2,i=1;
+    
+    while(i<=10)
+    {
+        printf(" %d * %d = %d\n ",n,i,n*i);
+        i++;
+    }
+    
+}
+
+output:
+  2 * 1 = 2
+  2 * 2 = 4
+  2 * 3 = 6
+  2 * 4 = 8
+  2 * 5 = 10
+  2 * 6 = 12
+  2 * 7 = 14
+  2 * 8 = 16
+  2 * 9 = 18
+  2 * 10 = 20
+===================================================
+11:
+#include<stdio.h>
+
+int main()
+{
+    int age;
+    printf("Enter the age ");
+    scanf("%d",&age);
+    
+    if(age>=18)
+    {
+        printf("You are eligible for vote");
+    }
+    else
+    {
+        printf("You are not eligible for vote");
+    }
+    
+}
+
+output:
+Enter the age 19
+You are eligible for vote
+===================================================
+12:
+#include<stdio.h>
+
+int main()
+{
+    int n;
+    printf("enter the number ");
+    scanf("%d",&n);
+    
+    if(n%5==0 ||  n%8==0)
+    {
+        printf("numebr is divisible by 5 and 8 any one ");
+    }
+    else
+    {
+        printf("Not");
+    }
+}
+
+output:
+enter the number 64
+numebr is divisible by 5 and 8 any one 
+===================================================
+13:
+#include<stdio.h>
+
+int main()
+{
+    char ch;
+    printf("Enter the character ");
+    scanf("%c" ,&ch);
+    
+    if(ch=='m')
+    {
+        printf("Male");
+    }
+    else if(ch=='f')
+    {
+        printf("Female");
+    }
+    else
+    {
+        printf("Other");
+    }
+}
+
+output:
+Enter the character m
+Male
+================================================
+14:
+#include<stdio.h>
+
+int main()
+{
+   int n,r,sum=0;
+   
+   printf("enter the number ");
+   scanf("%d",&n);
+   
+   while(n>0)
+   {
+       r = n%10;
+       sum = sum *10 +r;
+       n=n/10;
+   }
+   printf("%d",sum);
+}
+
+output:
+enter the number 125
+521
+=================================================
+15:
+#include <stdio.h>
+int main() {
+    
+    int x=1;
+    for(int i=1;i<=5;i++)
+{
+    for(int j=1;j<=i;j++)
+    {
+        printf("%d ",x);
+        x++;
+    }
+    printf("\n");
+    
+}   
+   
+    return 0;
+}
+
+output:
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15 
+
+=================================================
+16:
+#include <stdio.h>
+int main() {
+    
+    int a = 0,b=1,c,n;
+    printf("Enter the number ");
+    scanf("%d",&n);
+    printf("%d %d ",a,b);
+    for(int i=1;i<=n;i++)
+    {
+        c= a+b;
+        printf("%d ",c);
+        a = b;
+        b = c;
+        
+    }
+}
+
+output:
+Enter the number 5
+0 1 1 2 3 5 8 
+==================================================
+17:
+#include <stdio.h>
+int main() {
+   
+   int a,b;
+   
+   printf("Enter the value of a and b ");
+   scanf("%d%d",&a,&b);
+   
+   printf("Before swapping \n");
+   printf("a = %d \nb= %d\n ",a,b);
+   
+   
+   a = a+b;
+   b =a-b;
+   a = a-b;
+   
+   printf("After swapping \n");
+   printf("a = %d \nb= %d ",a,b);
+   
+}
+
+
+output:
+Enter the value of a and b 10
+20
+Before swapping 
+a = 10 
+b= 20
+ After swapping 
+a = 20 
+b= 10 
+========================================================
+18:
+#include <stdio.h>
+
+int factorial(int n);
+int main()
+{
+    int n;
+    
+    printf("Enter the number ");
+    scanf("%d",&n);
+    
+    printf("%d",factorial(n));
+    
+}
+
+int factorial(int n)
+{
+    int fact=1;
+    for(int i=1;i<=n;i++)
+    {
+        fact  = fact *i;
+    }
+  
+    
+    return fact;
+}
+
+
+output:
+Enter the number 5
+120
+========================================================
+19:
+#include <stdio.h>
+
+int main()
+{
+    int  n,sum=0,r;
+    
+    printf("Enter the number ");
+    scanf("%d",&n);
+    
+    while(n>0)
+    {
+        r = n%10;
+        sum = sum + r;
+        n= n/10;
+    }
+    printf("%d",sum);
+}
+
+output;
+Enter the number 1243
+10
+========================================================
+20:
+#include <stdio.h>
+
+int  main()
+{
+    int n,r,sum=0;
+    printf("Enter the number ");
+    scanf("%d",&n);
+    
+    int temp = n;
+    while(n>0)
+    {
+       r = n %10;
+       sum = sum + r*r*r;
+       n = n/10;
+    }
+    if(sum == temp)
+    {
+        printf("armstrong \n");
+    }
+    else
+    {
+        printf("not");
+    }
+}
+
+output:
+
+Enter the number 371
+armstrong 
+=======================================================
+21:
+
+#include <stdio.h>
+
+int  main()
+{
+    for(int i=1;i<=6;i++)
+    {
+        for(int j=1;j<=6;j++)
+        {
+            if(i==1 || i==6 || (i+j)==7)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
+
+
+output:
+******
+    * 
+   *  
+  *   
+ *    
+******
+====================================================
+22:
+#include <stdio.h>
+
+int main()
+{
+    int n,r,sum=0;
+   
+   printf("Enter the number ");
+   scanf("%d",&n);
+    int temp = n;
+    while(n>0)
+    {
+        r=  n%10;
+        sum = sum*10 + r;
+        n=  n/10;
+    }
+    if(sum == temp)
+    {
+        printf("Palidrome \n ");
+    }
+    else
+    {
+        printf("not\n");
+    }
+}
+
+output:
+
+Enter the number 121
+Palidrome 
+========================================================
+23:
+#include<stdio.h>
+
+int main()
+{
+   int n,count=0,r;
+   int i=1;
+   printf("enter number ");
+   scanf("%d",&n);
+   while(i<=n)
+   {
+       r = n%10;
+       n=n/10;
+       count++;
+   }
+   printf("%d",count);
+    
+}
+
+output:
+enter number 1234
+4
+=======================================================
+24:
+#include<stdio.h>
+
+int main()
+{
+  for(int n=2;n<=10;n++)
+  {
+      int i=1;
+      while(i<=10)
+      {
+          printf("%d ",n*i);
+          i++;
+      }
+      printf("\n\n");
+  }
+}
+
+output:
+2 4 6 8 10 12 14 16 18 20 
+
+3 6 9 12 15 18 21 24 27 30 
+
+4 8 12 16 20 24 28 32 36 40 
+
+5 10 15 20 25 30 35 40 45 50 
+
+6 12 18 24 30 36 42 48 54 60 
+
+7 14 21 28 35 42 49 56 63 70 
+
+8 16 24 32 40 48 56 64 72 80 
+
+9 18 27 36 45 54 63 72 81 90 
+
+10 20 30 40 50 60 70 80 90 100 
+=========================================================
+25:
+
+repeted 13
+
