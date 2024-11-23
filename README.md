@@ -1,1 +1,1 @@
-Complete Logic Building tThrough C Programming
+Complete Logic Building Through C Programming
